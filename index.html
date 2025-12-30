@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aira Landry</title>
+    <link rel="stylesheet" href="r.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Salsa&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo"> <img src="logo.png"></div>
+        <h1> AIRA LAUNDRY</h1>
+        <div class="menu">
+        <a href = "#" data-target="about">about</a>
+        <a href="#" data-target="layanan">layanan</a>
+        <a href="#" data-target="parfum">parfum</a>
+
+        
+        
+    </div>
+    </div>
+    <section class="awal">
+    <div class="contact">
+        <h1 id = "about"> LAYANAN JASA CUCI PAKAIAN DAN PARFUM</h1>
+        <p>Aira Laundry hadir sebagai solusi bagi Anda yang sibuk namun tetap menginginkan pakaian yang bersih dan harum. Kami menyediakan berbagai layanan laundry seperti cuci lipat, cuci setrika, dan setrika saja.
+        Tak hanya itu, kami juga menjual parfum laundry dengan aroma yang wangi dan tahan lama, membuat pakaian Anda semakin nyaman dipakai.</p>
+        <a href = "https://wa.me/6281348173397" class="btn">hubungi kami</a>
+    </section>
+   
+    <h2 id="layanan">layanan kami</h2>
+    <section class ="services">
+        <div class="layanan">
+            <img src ="img/lipat.png">
+            <h1> cuci kering</h1>
+            <p>Rp.5000-10.000/kg</p>
+        </div>
+        <div class="layanan">
+            <img src ="img/set.png">
+            <h1> cuci setrika</h1>
+            <p>Rp.7000-13.000/kg</p>
+        </div>
+
+        <div class="layanan">
+            <img src ="img/selimut.png">
+            <h1> selimut </h1>
+            <p>Rp.10.000-25.000/kg</p>
+        </div>
+        <div class="layanan">
+            <img src ="img/boneka1.png">
+            <h1> boneka</h1>
+            <p>Rp.10.000 - 15.000/pcs</p>
+        </div>
+        <div class="layanan">
+            <img src ="img/sepatu.png">
+            <h1> sepatu</h1>
+            <p>Rp.15.000-20.000/pasang</p>
+            <p>tergantung bahan</p>
+        </div>
+        <a href="poster.html" class="layanan">
+            <h2>MORE INFO+</h2>
+           
+        </a>
+        
+    </section>
+    
+<h3 id = "parfum"> best seller parfum</h3>
+<section class ="parfum">
+    <div class="wangi">
+        <img src="img/parpum1.jpeg">
+        <h1> Grade A</h1>
+        <p>Rp. 45.000</p>
+    </div>
+    <div class="wangi">
+        <img src="img/parpum2.jpeg">
+        <h1> Grade B</h1>
+        <p>Rp. 38.000</p>
+    </div>
+    <div class="wangi">
+        <img src="img/100ml.jpeg">
+        <h1> reffil 100ml</h1>
+        <p>Rp. 13.000</p>
+    </div>
+  
+
+</section>
+    <div class = "map">
+        <h4>our location</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.937696921607!2d113.87294197405201!3d-2.1773610372473464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb144e88d264f%3A0x627a13792c385097!2sAIRA%20LAUNDRY!5e0!3m2!1sen!2sus!4v1767023539137!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container footer">
+        <h5>develop by reva</h5>
+        <p> @2025
+        </p>
+    </div>
+</body>
+<script>
+    
+    document.querySelectorAll('.menu a[data-target]').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const target = document.getElementById(link.dataset.target);
+        if (!target) return;
+
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+</script>
+
+    
+    
+</html>

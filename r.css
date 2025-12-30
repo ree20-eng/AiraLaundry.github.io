@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+#layanan,
+#parfum {
+    scroll-margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+   
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    
+}
+
+.logo img {
+    width: 50px;
+}
+
+.container h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 26px;
+    font-family: "salsa", sans-serif;
+}
+
+.menu a {
+    margin-left: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.menu a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/* ===== HERO ===== */
+.awal {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+                url("img/baru.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 180px 80px;
+    color: white;
+}
+
+.contact {
+    max-width: 500px; /* KUNCI TEKS TURUN */
+}
+
+.contact h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: justify;
+}
+.btn a:hover{
+    transform: translateY(-10px);
+}
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: hotpink;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* ===== SERVICES ===== */
+h2, h3, h4 {
+    text-align: center;
+    margin: 60px 0 20px;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    
+   
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.layanan {
+    background: #e1e3e6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.08);
+
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.layanan:hover{
+    transform: translateY(-10px);
+}
+.layanan img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.layanan h2{
+    color: #000000;
+   text-align: center;
+    margin-top: 125px;
+    font-size: 26px;
+   
+}
+
+.layanan h1 {
+    font-size: 25px;
+    margin: 10px 0;
+    font-family: "salsa", sans-serif;
+}
+
+.layanan p{
+    font-size: 15px;
+}
+/* ===== PARFUM ===== */
+.parfum {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+    justify-content: center;
+}
+
+.wangi {
+   background-color: #e1e3e6; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 2px 6px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.wangi:hover{
+transform: translateY(-10px);
+}
+.wangi img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.wangi h1{
+    font-size: 25px;
+    margin: 10px 0;
+    font-family: "salsa", sans-serif;;
+
+}
+.wangi p{
+    font-size: 15px;
+}
+
+/* ===== MAP ===== */
+.map {
+    margin: 60px 0;
+    padding: 0 40px;
+    text-align: center;
+    
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 1px solid;
+   
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background: #222;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .services,
+    .parfum {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .layanan img,
+    .wangi img {
+        height: 180px;
+    }
+}
